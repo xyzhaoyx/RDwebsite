@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+
+{% block header %}
+  <h1>{% block title %}{% endblock %}</h1>
+{% endblock %}
+
+
+{% block content %}
+
+
+    <p>Free responsive modern and clean HTML5, CSS3 and Jquery. Multipurpose Page minimalist website with content about us, portfolio and contact. Full screen portfolio view and home page with Parallax sidebar. Navigation is sticky to top - header. Ideal for your portfolio and photography showcase.
+    </p>
+    
+        <div class="grid">
+        
+            <a class="action" href="{{ url_for('blog.index') }}"><div class="element">
+            <img src="{{ url_for('static', filename='img/1.jpg') }}">
+            <p>1111111111111111111111111111111111111111111111111</p>
+            </div></a>
+
+        </div>
+
+        <div class="grid">
+        
+                <a class="action" href="{{ url_for('blog.index') }}"><div class="element">
+                <img src="{{ url_for('static', filename='img/2.jpg') }}">
+                <p>22222222222222222222222222222222222222222222</p>
+                </div></a>
+
+        </div>
+
+
+{% endblock %}
